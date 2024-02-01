@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../Fonts/Rubik/static/Rubik-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('../Fonts/Rubik/static/Rubik-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Exo';
+    src: url('../Fonts/Exo/static/Exo2-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+  
+body {
+    margin: 0;
+    overflow-y: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+.n-back {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.n-back img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-center {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------------------------------------------------------------------ */
+/* Main Content */
+.n-content {
+    width: 95%;
+    height: 93vh;
+    background-color: #0066ff1a;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+}
+/* ------------------------------------------------------------------------------ */
+/* Nav Bar */
+.n-nav {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.n-nav-logo {
+    width: 60px;
+    cursor: pointer;
+}
+.n-nav-logo img {
+    width: 100%;
+    height: 100%;
+}
+.n-nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.n-nav-list li {
+    margin-right: 20px;
+}
+.n-nav-list a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s 0s linear;
+}
+.n-nav-list a:hover {
+    color: #CAF0F8;
+}
+/* ------------------------------------------------------------------------------ */
+/* Main Content */
+.n-main-content {
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    flex-direction: row;
+}
+/* ------------------------------------------------------------------------------ */
+/* Header */
+.n-header {
+    width: 60%;
+    height: 350px;
+    position: relative;
+    top: 20%;
+    left: 3%;
+}
+.n-header-title {
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 102px;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 0;
+    cursor: default;
+}
+.n-header-title img {
+    margin-bottom: 20px;
+}
+.n-header-text {
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: normal;
+    cursor: default;
+}
+.n-header-img {
+    width: 40%;
+}
+
+.n-mail-get {
+    padding: 15px 25px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s 0s linear;
+    overflow: hidden;
+    cursor: pointer;
+}
+.n-mail-get::before, .n-mail-get::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #0096C7;
+    transition: 1s 0s ease;
+}
+.n-mail-get::before {
+    top: -20px;
+    left: -20px;
+}
+.n-mail-get::after {
+    left: calc(100% + 25px);
+    top: calc(100% + 25px);
+}
+.n-mail-get:hover::before, .n-mail-get:hover::after {
+    height: 410px;
+    width: 410px;
+}
+.n-mail-get:hover {
+    color: #ffffff;
+}
+.n-mail-get:active {
+    filter: brightness(.8);
+}
+/* ------------------------------------------------------------------------------ */
