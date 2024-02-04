@@ -13,8 +13,12 @@
     src: url('../Fonts/Exo/static/Exo2-Regular.ttf') format('truetype');
     font-weight: 400;
 }
-  
+
+* {
+    box-sizing: border-box;
+}
 body {
+    background-color: #EDF2F7;
     margin: 0;
     overflow-y: hidden;
     font-family: 'Rubik', sans-serif;
@@ -377,6 +381,10 @@ body {
 }
 .n-header-img {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .n-mail-get {

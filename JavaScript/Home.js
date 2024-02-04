@@ -15,3 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+//-------------------------------------------------------------------
+// Emails HTML Button
+function openEmailsPage() {
+    window.location.href = 'Emails.html';
+}

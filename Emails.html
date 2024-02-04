@@ -18,6 +18,100 @@
     <link rel="stylesheet" href="CSS/Emails.css">
 </head>
 <body>
-    
+    <div class="n-loading">
+        <div role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+    </div>
+    <section class="e-aside">
+        <ul class="e-aside-list">
+            <li>
+                <div class="e-aside-title"><a href="Index.html"><i class="fa-solid fa-envelope"></i> Nook Mails</a></div>
+            </li>
+            <li>
+                <button class="e-add-mail" onclick="addRandomEmail()">Add Email</button>
+            </li>
+            <p class="e-alerts"></p>
+            <hr>
+            <ul class="e-aside-mails" id="emailList">
+                <!-- <li class="e-nook-mail" id="emailList-${emailId}">
+                    <button class="email-button">Random Mail Here</button>
+                    <button class="remove-mail" onclick="removeEmail('${emailId}')"><i class="fa-solid fa-trash"></i></button>
+                </li> -->
+            </ul>
+        </ul>
+    </section>
+    <section class="e-inbox">
+        <!-- <div class="e-flex" id="e-inbox-0">
+            <nav class="e-inbox-nav">
+                <p class="e-nav-email"><i class="fa-solid fa-inbox"></i> Email Here</p>
+                <button type="button" class="e-inbox-refresh" onclick="refreshInbox()"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
+                <div>
+                    <button class="mail-time" id="e-inbox-re-1"><i class="fa-solid fa-rotate-right"></i></button>
+                    <span class="mail-time-limit" id="e-inbox-t-1">Timer 5:00</span>
+                </div>
+            </nav>
+            <div class="e-inbox-mails">
+                <ul class="inbox-list">
+                    <li data-email-id="e-in1-1">
+                        <div class="e-mail e-in1-1" onclick="handleEmailClick('e-in1-1')">
+                            <p class="e-mail-title">Title Message</p>
+                            <p class="e-mail-text">
+                                Message Here
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="e-mail e-in1-2" onclick="handleEmailClick('e-in1-2')">
+                            <p class="e-mail-title">Title Message</p>
+                            <p class="e-mail-text">
+                                Fuck The Team Work
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Natus doloremque maxime quo temporibus asperiores dolorem nihil sint atque.
+                                Reprehenderit ullam architecto dolor magni beatae quae, quod impedit tempora at magnam!
+                                Fuck The Team Work
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Natus doloremque maxime quo temporibus asperiores dolorem nihil sint atque.
+                                Reprehenderit ullam architecto dolor magni beatae quae, quod impedit tempora at magnam!
+                                Fuck The Team Work
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Natus doloremque maxime quo temporibus asperiores dolorem nihil sint atque.
+                                Reprehenderit ullam architecto dolor magni beatae quae, quod impedit tempora at magnam!
+                                Fuck The Team Work
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Natus doloremque maxime quo temporibus asperiores dolorem nihil sint atque.
+                                Reprehenderit ullam architecto dolor magni beatae quae, quod impedit tempora at magnam!
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+    </section>
+    <div class="e-inbox-view" id="e-inbox-view">
+        <button class="e-inbox-view-x" onclick="handleCloseButtonClick()"><i class="fa-solid fa-x"></i></button>
+        <div id="e-inbox-open">
+            <!-- محتوى الرسالة سيظهر هنا -->
+        </div>
+    </div>
+    <script src="JavaScript/all.js"></script>
+    <script src="JavaScript/jquery-3.7.1.min.js"></script>
+    <script src="JavaScript/bootstrap.js"></script>
+    <script src="JavaScript/Email.js"></script>
 </body>
 </html>
