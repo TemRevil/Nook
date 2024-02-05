@@ -68,6 +68,25 @@ ul {
     background-color: #373D3F;
     border-radius: 20px;
 }
+.offcanvas {
+    display: none;
+    width: 100% !important;
+}
+.open-phone {
+    display: none;
+    position: absolute;
+    top: 8%;
+    height: fit-content;
+    padding: 5px 20px;
+    margin: 10px;
+    background-color: #343a40;
+    border: none;
+    border-radius: 5px;
+}
+.open-phone:hover, .open-phone:focus-within, .open-phone:focus-visible, .open-phone:active {
+    background-color: #123 !important;
+}
+
 .e-aside-list {
     list-style: none;
     margin: 0;
@@ -105,10 +124,10 @@ ul {
     position: absolute;
     content: "";
     background: #373D3F;
-    width: 130%;
-    height: 200px;
+    width: 1000%;
+    height: 350%;
     z-index: -1;
-    border-radius: 50%;
+    border-radius: 40%;
 }
 .e-add-mail:hover {
     color: white;
@@ -120,7 +139,7 @@ ul {
 }
 .e-add-mail:hover::before {
     top: -40px;
-    left: -35px;
+    left: -100px;
 }
 .e-alerts {
     font-family: 'Rubik', sans-serif;
@@ -146,13 +165,14 @@ ul {
     background-color: #E9ECEF;
     border-radius: 5px;
     cursor: pointer;
+    overflow: hidden;
     transition: 0.2s 0s linear;
 }
 
 .e-nook-mail:hover, .e-nook-mail:focus-within, .e-nook-mail:focus-visible, .e-nook-mail:active {
     background-color: #cfd4da;
 }
-.email-button {
+.e-nook-mail p {
     padding: 5px;
     background-color: transparent;
     color: #2B2D42;
@@ -161,7 +181,7 @@ ul {
     cursor: pointer;
     transition: 0.3s 0s linear;
 }
-.email-button:hover {
+.e-nook-mail p:hover {
     background-color: white;
 }
 .remove-mail {
@@ -178,7 +198,7 @@ ul {
 /* ------------------------------------------------------------------------------ */
 /* Main Inbox */
 .e-inbox {
-    width: 82%;
+    width: calc(100% - 300px);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -196,7 +216,7 @@ ul {
 }
 .e-inbox-nav p, .mail-time-limit {
     font-family: 'Rubik', sans-serif;
-    font-size: 32px;
+    font-size: 28px;
     color: #2B2D42;
 }
 .e-inbox-refresh {

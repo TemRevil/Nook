@@ -17,6 +17,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 // ----------------------------------------------------------------------------
+// Aside Section Move For Media Querys
+var sectionElement = document.querySelector('.e-aside');
+var buttonElement = document.querySelector('.open-phone');
+var offcanvasElement = document.querySelector('#offcanvasScrolling');
+
+window.onload = function () {
+    moveSection();
+};
+
+window.onresize = function () {
+    moveSection();
+};
+
+function moveSection() {
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    if (viewportWidth <= 768) {
+        if (!offcanvasElement.contains(sectionElement)) {
+            // Move the section inside the offcanvas element
+            offcanvasElement.appendChild(sectionElement);
+        }
+    } else {
+        if (offcanvasElement.contains(sectionElement)) {
+            // Move the section back to its original position
+            buttonElement.parentNode.insertBefore(sectionElement, buttonElement.nextSibling);
+        }
+    }
+}
+// ----------------------------------------------------------------------------
 // Main Event
 var inboxCounter = 1;
 var emailCounter = 0;
@@ -33,7 +62,7 @@ function addRandomEmail() {
     var randomEmail = generateRandomEmail();
     var newEmail = document.createElement("li");
     var emailId = "email-" + inboxCounter;
-    var inboxId = "e-inbox-" + inboxCounter;  // تعيين قيمة inboxId
+    var inboxId = "e-inbox-" + inboxCounter;
     newEmail.id = "emailList-" + emailId;
     newEmail.className = "e-nook-mail";
     newEmail.setAttribute("data-email-name", randomEmail);

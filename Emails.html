@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/bootstrap.css.map">
     <link rel="stylesheet" href="CSS/Emails.css">
+    <link rel="stylesheet" href="CSS/Media.css">
 </head>
 <body>
     <div class="n-loading">
@@ -38,6 +39,12 @@
             <div class="spoke"></div>
         </div>
     </div>
+    <button class="btn btn-primary open-phone" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Mails List</button>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    </div>
     <section class="e-aside">
         <ul class="e-aside-list">
             <li>
@@ -50,7 +57,7 @@
             <hr>
             <ul class="e-aside-mails" id="emailList">
                 <!-- <li class="e-nook-mail" id="emailList-${emailId}">
-                    <button class="email-button">Random Mail Here</button>
+                    <p class="email-button">Random Mail Here</p>
                     <button class="remove-mail" onclick="removeEmail('${emailId}')"><i class="fa-solid fa-trash"></i></button>
                 </li> -->
             </ul>
@@ -111,7 +118,7 @@
     </div>
     <script src="JavaScript/all.js"></script>
     <script src="JavaScript/jquery-3.7.1.min.js"></script>
-    <script src="JavaScript/bootstrap.js"></script>
+    <script src="JavaScript/bootstrap.bundle.min.js"></script>
     <script src="JavaScript/Email.js"></script>
 </body>
 </html>

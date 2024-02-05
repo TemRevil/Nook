@@ -1,0 +1,163 @@
+/* Home Media */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .n-main-content {
+        grid-template-columns: 60% 37%;
+        grid-template-rows: 100%;
+        grid-template-areas: "header img";
+        gap: 20px;
+    }
+    .n-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: unset;
+        height: 100%;
+        margin-left: 10px;
+    }
+    .n-header-title {
+        font-size: 82px;
+    }
+    .n-header-text {
+        font-size: 34px;
+    }
+    .n-header-img {
+        height: 115%;
+    }
+    .n-header-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .n-mail-get {
+        width: 40%;
+    }
+}
+@media (max-width: 768px) {
+    .n-main-content {
+        grid-template-columns: 100% 100%;
+        grid-template-rows: 38% 62%;
+        grid-template-areas:
+            "img"
+            "header";
+        gap: 20px;
+    }
+    .n-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: unset;
+        height: 100%;
+        margin-left: 10px;
+    }
+    .n-header-title {
+        font-size: 82px;
+    }
+    .n-header-text {
+        font-size: 34px;
+    }
+    .n-header-img {
+        height: 110%;
+    }
+    .n-header-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .n-mail-get {
+        width: 50%;
+    }
+}
+@media (max-width: 520px) {
+    .n-nav-list li {
+        display: none;
+    }
+    .nav-item {
+        display: block !important;
+    }
+    .nav-item li {
+        display: block;
+    }
+
+    .n-header-title {
+        font-size: 52px;
+    }
+    .n-header-text {
+        font-size: 24px;
+    }
+
+    .n-mail-get {
+        width: 95%;
+    }
+}
+/* ----------------------------------- */
+/* Nook Mails Media */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .e-aside {
+        width: 30%;
+    }
+    .e-aside-title {
+        font-size: 24px;
+    }
+    .e-inbox {
+        width: 70%;
+    }
+    .e-inbox-refresh {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+    .e-inbox-nav p, .mail-time, .mail-time-limit {
+        font-size: 25px;
+    }
+}
+@media (min-width: 769px) and (max-width: 850px) {
+    .e-inbox-nav p, .mail-time, .mail-time-limit {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .e-aside {
+        display: block;
+        width: 100%;
+    }
+    .open-phone {
+        display: block;
+    }
+    .offcanvas {
+        display: block;
+    }
+
+    .e-inbox {
+        width: 100%;
+    }
+    .e-flex {
+        gap: 50px;
+    }
+    .e-inbox-nav p, .mail-time, .mail-time-limit {
+        font-size: 25px;
+    }
+    #e-inbox-open {
+        width: 85%;
+    }
+}
+@media (max-width: 640px) {
+    .e-inbox-refresh {
+        display: none;
+    }
+    .e-inbox-nav p, .mail-time, .mail-time-limit {
+        font-size: 22px;
+    }
+}
+@media (max-width: 400px) {
+    .open-phone {
+        top: 10%;
+    }
+    .e-inbox-nav {
+        flex-direction: column;
+        height: 80px;
+        gap: 0;
+    }
+    .e-inbox-nav p, .mail-time, .mail-time-limit {
+        font-size: 20px;
+    }
+}
+/* ----------------------------------- */
+/* Team */

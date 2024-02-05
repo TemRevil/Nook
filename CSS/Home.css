@@ -41,6 +41,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../Background/Home.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -337,27 +342,52 @@ body {
     font-size: 22px;
     font-weight: bold;
     color: white;
-    transition: 0.3s 0s linear;
+    transition: 0.2s 0s linear;
 }
 .n-nav-list a:hover {
     color: #CAF0F8;
+}
+
+.nav-item {
+    display: none;
+    color: white;
+}
+.nav-item:hover, .nav-item:focus-visible {
+    color: white;
+}
+.nav-item li {
+    width: 100%;
+}
+.nav-ul-drop {
+    background-color: #0067ff6b;
+    border: none;
+}
+.dropdown-item {
+    background-color: transparent;
+}
+.dropdown-item:hover {
+    background-color: #fff;
+    color: #50b4ea !important;
 }
 /* ------------------------------------------------------------------------------ */
 /* Main Content */
 .n-main-content {
     width: 100%;
     height: 84vh;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "header img";
+    align-items: center;
 }
 /* ------------------------------------------------------------------------------ */
 /* Header */
 .n-header {
-    width: 60%;
+    grid-area: header;
+    width: 100%;
     height: 350px;
+    margin-left: 40px;
     position: relative;
-    top: 20%;
-    left: 3%;
+    bottom: 10%;
 }
 .n-header-title {
     color: white;
@@ -380,7 +410,8 @@ body {
     cursor: default;
 }
 .n-header-img {
-    width: 40%;
+    grid-area: img;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
