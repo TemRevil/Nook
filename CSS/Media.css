@@ -31,6 +31,10 @@
     .n-mail-get {
         width: 40%;
     }
+
+    .what {
+        flex: 1 1 100%;
+    }
 }
 @media (max-width: 768px) {
     .n-main-content {
@@ -66,6 +70,13 @@
         width: 50%;
     }
 
+    .how-title-content {
+        font-size: 32px;
+    }
+    .what {
+        flex: 1 1 100%;
+    }
+
     .how-row {
         flex-wrap: wrap;
     }
@@ -93,6 +104,17 @@
 
     .n-mail-get {
         width: 95%;
+    }
+
+    .what-title {
+        font-size: 30px;
+    }
+    .what-text {
+        font-size: 20px;
+    }
+
+    .footer-ul-li {
+        text-align: start;
     }
 }
 /* ----------------------------------- */
