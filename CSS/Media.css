@@ -65,6 +65,13 @@
     .n-mail-get {
         width: 50%;
     }
+
+    .how-row {
+        flex-wrap: wrap;
+    }
+    .how {
+        flex-grow: 1;
+    }
 }
 @media (max-width: 520px) {
     .n-nav-list li {

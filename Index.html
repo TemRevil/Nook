@@ -39,38 +39,243 @@
             <div class="spoke"></div>
         </div>
     </div>
-    <section class="content-center">
-        <section class="n-content">
-            <nav class="n-nav">
-                <a href="Index.html" class="n-nav-logo"><img src="Background/Nook.png" alt="Nook Logo"></a>
-                <ul class="n-nav-list">
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="Emails.html">Nook Mails</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Links
-                        </a>
-                        <ul class="dropdown-menu nav-ul-drop">
-                            <li><a class="dropdown-item" href="Index.html">Home</a></li>
-                            <li><a class="dropdown-item" href="Emails.html">Nook Mails</a></li>
-                            <li><a class="dropdown-item" href="#">Team</a></li>
-                            <li><a class="dropdown-item" href="#">Contact</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="n-main-content">
-                <header class="n-header">
-                    <p class="n-header-title">Welcome To<br><img src="Background/Nook.png" alt="Nook Logo"> Nook</p>
-                    <p class="n-header-text">The Premier Destination<br>For Temporary Email Services!</p>
-                    <button class="n-mail-get" onclick="openEmailsPage()"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> Get Your Mail</button>
-                </header>
-                <div class="n-header-img"><img src="Background/Header.svg" alt="Mail Illustration"></div>
-            </div>
-        </section>
+    <section class="main-content">
+        <nav class="n-nav">
+            <a href="Index.html" class="n-nav-logo"><img src="Background/Nook.png" alt="Nook Logo"></a>
+            <ul class="n-nav-list">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Emails.html">Nook Mails</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Links
+                    </a>
+                    <ul class="dropdown-menu nav-ul-drop">
+                        <li><a class="dropdown-item" href="Index.html">Home</a></li>
+                        <li><a class="dropdown-item" href="Emails.html">Nook Mails</a></li>
+                        <li><a class="dropdown-item" href="#">Team</a></li>
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="n-main-content">
+            <header class="n-header">
+                <p class="n-header-title" id="href-welcome">Welcome To<br><img src="Background/Nook.png" alt="Nook Logo"> Nook</p>
+                <p class="n-header-text">The Premier Destination<br>For Temporary Email Services!</p>
+                <button class="n-mail-get" onclick="openEmailsPage()"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> Get Your Mail</button>
+            </header>
+            <div class="n-header-img"><img src="Background/Header.svg" alt="Mail Illustration"></div>
+        </div>
     </section>
+    <section class="what-content">
+        <div class="n-what-content">
+            <p class="how-title-content">Why Would You Use Nook?</p>
+            <div class="what-row">
+                <div class="what">
+                    <p class="what-title">Security</p>
+                    <p class="what-text">Protect your email from potential attacks and hacking attempts using our temporary email addresses, ensuring your personal information stays secure.</p>
+                </div>
+                <div class="what">
+                    <p class="what-title">Advertisement</p>
+                    <p class="what-text">Block ads and annoying emails from reaching your primary inbox.</p>
+                </div>
+                <div class="what">
+                    <p class="what-title">Privacy</p>
+                    <p class="what-text">Automatically delete emails once your time is up or you delete your temporary email.</p>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <section class="how-content">
+        <div class="n-how-content">
+            <p class="how-title-content">How To Use Nook?</p>
+            <div class="how-row">
+                <div class="how">
+                    <img src="Background/How/1.png" alt="How To 1" class="how-img">
+                    <p class="how-text">1.Go To <a href="Emails.html">Nook Mails</a> Part or <br> <a href="#href-welcome">Get You Mail</a></p>
+                </div>
+                <div class="how">
+                    <img src="Background/How/2.png" alt="How To 2" class="how-img">
+                    <p class="how-text">2.Add Email By Click On Add Mail Button</p>
+                </div>
+                <div class="how">
+                    <img src="Background/How/3.png" alt="How To 3" class="how-img">
+                    <p class="how-text">3.Copy Your Email And Use it in Any Site You Want. <br> Easy Peasy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Rights Modal Boxes">
+        <div class="modal fade" id="PrivacyModal" tabindex="-1" aria-labelledby="PrivacyModal" aria-hidden="true" style="--bs-modal-margin: 0.75rem;">
+          <div class="modal-dialog" style="max-width: 80%;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="PrivacyModal">Privacy & Policies For Encryptor©</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2>Privacy Policy:</h2>
+                <ul>
+                  <li><strong>Information Collection:</strong> We provide a password generator service and a program to create password lists. Passwords are generated randomly without collecting any personal information. Generated passwords are not stored or shared.</li>                   
+                  <li><strong>Developer Information:</strong> The login page for website developers provides limited access for development purposes only. It does not collect or store any personal information.</li>                    
+                  <li><strong>User Communication:</strong> In case users contact us through email or the contact form, any provided personal information will be processed confidentially and not shared with third parties.</li>
+                  <li><strong>Server Logs:</strong> Some technical data, such as IP addresses and browser types, is logged for statistical purposes and site usage analysis. However, it does not include personal information.</li>
+                  <li><strong>Password Generator Saver:</strong> The Password Saver Button Don't Collect Any Information About Any Password Or Email Before Or After Save And It's Secured To Use</li>
+                </ul>
+                <h2>Security Policy:</h2>
+                <ul>
+                  <li><strong>Site Security:</strong> We are committed to providing a secure environment using advanced encryption techniques to protect data transmitted through the site. Additional security measures are implemented to prevent unauthorized access.</li>
+                  <li><strong>Visitor Information:</strong> The site collects information about the number of visitors, IP addresses, and browser types for statistical purposes. This information is not used to identify individuals and remains confidential.</li>
+                  <li><strong>Unique Passwords Guarantee:</strong> Passwords generated by the tool are designed to be unique for each use, ensuring security and preventing password reuse.</li>
+                  <li><strong>Cookies:</strong> We do not use cookies to track user behavior. However, cookies may be used to enhance the user experience and customize content.</li>
+                  <li><strong>Advertising Policy:</strong> The site may contain advertisements for site funding. These ads do not include personal information and are used for statistical purposes only.</li>
+                </ul>
+                <h2>Contact Information:</h2>
+                <p>In case of any problems or concerns, users can contact us via email at <strong><a href="mailto:temrevil@gmail.com" style="text-decoration: none;">temrevil@gmail.com</a></strong> or by phone at <strong>+201001308280</strong>.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="TermsOfUseModal" tabindex="-1" aria-labelledby="TermsOfUseModal" aria-hidden="true" style="--bs-modal-margin: 0.75rem;">
+          <div class="modal-dialog" style="max-width: 80%;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="TermsOfUseModal">Encryptor© Terms Of Use</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Welcome to <strong>[Encryptor©]</strong>!</p>
+                <p>By using this website, you agree to comply with the following terms and conditions. Please read these terms carefully before using the site.</p>
+                <p><strong>1. Password Generator:</strong><br>
+                    - The password generator provides randomly generated passwords ranging from 8 to 1024 characters.<br>
+                    - We are not responsible for the misuse of these passwords for unethical or illegal activities. Users should use them cautiously and at their own risk.</p>
+                <p><strong>2. Kali Linux Lists Generator:</strong><br>
+                    - The lists generator provides password lists for use in Kali Linux or similar security tools.<br>
+                    - Users are required to use these lists responsibly and in compliance with local and international laws. Usage for illegal or unethical activities is strictly prohibited.</p>
+                <p><strong>3. Responsibility and Indemnity:</strong><br>
+                    - Users are responsible for the proper use of the provided resources.<br>
+                    - We are not liable for any damages resulting from the use or inability to use this website.</p>
+                <p><strong>4. Website Update and Deletion:</strong><br>
+                    - Users have the right to update or delete the website with prior notice.<br>
+                    - We are not responsible for any data loss or resulting effects from updating or deleting the website.</p>
+                <p><strong>5. Intellectual Property Rights:</strong><br>
+                    - All rights related to content and trademarks belong to <strong>[Twistev]</strong>.<br>
+                    - Copying or transferring any content is prohibited without written permission.</p>
+                <p><strong>6. Information Confidentiality:</strong><br>
+                    - We respect user privacy and commit to protecting personal information in accordance with our privacy policy.</p>
+                <p><strong>7. Changes and Updates:</strong><br>
+                    - We reserve the right to change these terms at any time without prior notice.<br>
+                    - It is advisable to periodically check these terms for updates.</p>
+                <p><strong>8. Governing Law:</strong><br>
+                    - These terms are governed by local and international laws.</p>
+                <p><strong>9. Contact:</strong><br>
+                    - For any inquiries or comments, please contact us at <strong><a href="mailto:temrevil@gmail.com" style="text-decoration: none;">temrevil@gmail.com</a></strong>.</p>
+                <p>Last Updated: <strong>[24/11"November"/2023]</strong></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="CopyRightModal" tabindex="-1" aria-labelledby="CopyRightModal" aria-hidden="true" style="--bs-modal-margin: 0.75rem;">
+          <div class="modal-dialog" style="max-width: 80%;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="CopyRightModal">Encryptor© All Rights Reserved</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <P>
+                  <h2>Encryptor Private Software License</h2>
+                  <h5>Copyright © 2023, Mohamed Ahmed aka "Tem Revil"
+                  All rights reserved.</h5>
+                  <hr>
+                  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+                  <br>
+                  - Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+                  <br>
+                  - Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the <br> / documentation and/or other materials provided with the distribution.
+                  <br>
+                  - Neither the name of Mohamed Ahmed nor the names of its contributors may be used to endorse or promote products derived from this software <br> / without specific prior written permission
+                  <hr>
+                  - In addition to the above, users and redistributors of this software must agree to the following:
+                  <br>
+                  - Users and redistributors may not create or distribute copies or modified versions of this software or any of its components without prior written <br> / permission from the copyright holder.
+                  <br>
+                  - Users and redistributors may not sell, rent, or assign any rights or privileges in this software or any of its components without prior written <br> / permission from the copyright holder.
+                  <br>
+                  - Users and redistributors may not publish or distribute this software or any of its components in a way that may harm the reputation of the copyright holder.
+                  <br>
+                  - Users and redistributors may not use the name or logo of Encryptor in any way that may confuse consumers or suggest a connection with the <br> / copyright hold
+                  <br>
+                  - Users and redistributors may not use the name or logo of Encryptor in any way that may harm the reputation of the copyright holder
+                  <br>
+                  - Users and redistributors may not use the name or logo of Encryptor in any way that may violate the copyright holder's intellectual property rights.
+                  <br>
+                  - Any person who violates any of the terms of this license shall be liable for damages to the copyright holder, including, but not limited to, legal <br> / fees, expenses and actual damages.
+                  <br>
+                  By using this software, you agree to these terms.
+                  <hr>
+                  <strong>Disclaimer:</strong>
+                  <br>
+                  This software is provided by the copyright holders and contributors "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall Mohamed Ahmed be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.
+                  <hr>
+                  <strong>Interpretation:</strong>
+                  <br>
+                  In the event of any conflict between the terms of this license and any other terms applicable to the use of this software, the terms of this license shall prevail.
+                  <hr>
+                  <strong>Governing Law:</strong>
+                  <br>
+                  This license is governed by and construed in accordance with the laws of the Arab Republic of Egypt.
+                  <hr>
+                  <strong>Consent:</strong>
+                  <br>
+                  By using this software, you agree to these terms.
+                  <hr>
+                  <p style="text-align: center;">
+                      Signature of Copyright Holder : <span style="font-family: 'ink free';font-weight: bold;font-size: 18px;">Mohammed Ahmed</span>
+                      <br>
+                      Date : 2023-10-04
+                  </p>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer>
+        <p class="footer-title"><img src="Background/Nook.png" alt="Nook icon">Nook Mails</p>
+        <ul>
+            <li>
+                <button type="button" class="btn btn-primary footer-ul-li" data-bs-toggle="modal" data-bs-target="#PrivacyModal">Privacy & Policies For Encryptor©</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-primary footer-ul-li" data-bs-toggle="modal" data-bs-target="#TermsOfUseModal">Terms Of Use For Encryptor©</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-primary footer-ul-li" data-bs-toggle="modal" data-bs-target="#CopyRightModal">Encryptor© License All Rights Reserved</button>
+            </li>
+                <hr style="width: 100%;border: 2px white solid;">
+            <li>
+                <a href="mailto:temrevil@gmail.com" class="footer-ul-li-2">temrevil@gmail.com</a>
+                <p class="footer-ul-li-2">+201001308280</p>
+            </li>
+        </ul>
+        <div class="footer-feed">
+            <textarea name="Feedback" placeholder="Your Feedback Just Click Enter And Your Feedback Will Be Send" id="Feedback" cols="30"></textarea>
+        </div>
+    </footer>
     <script src="JavaScript/all.js"></script>
     <script src="JavaScript/jquery-3.7.1.min.js"></script>
     <script src="JavaScript/bootstrap.bundle.min.js"></script>
