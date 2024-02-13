@@ -1,0 +1,120 @@
+/* main content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    background-color: #0066ff47;
+    backdrop-filter: blur(40px);
+    margin-top: 50px;
+    border-radius: 15px;
+}
+/* ------------------------------------------------------------------------------ */
+/* Team Content */
+.t-main-content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+    "img title"
+    "list text"
+    "list exp";
+    gap: 20px;
+}
+
+.t-img {
+    grid-area: img;
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.1s 0s linear;
+}
+.t-img:active {
+    scale: 0.9;
+}
+.t-img img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: 0.2s 0s linear;
+}
+.t-img img:hover {
+    filter: grayscale(0);
+    scale: 1.1;
+}
+
+.t-contact {
+    grid-area: list;
+}
+.t-contact ul {
+    grid-area: list;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.t-contact ul li {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    transition: 0.2s 0s linear;
+}
+.t-contact ul li:hover {
+    scale: 1.2;
+}
+.t-contact ul li:active {
+    scale: 0.9;
+}
+.t-contact a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s 0s linear;
+}
+
+.t-title {
+    grid-area: title;
+    margin-top: 50px;
+    font-size: 72px;
+    font-weight: 900;
+    color: white;
+    pointer-events: none;
+}
+
+.t-text {
+    grid-area: text;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+
+.t-exp {
+    grid-area: exp;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+.t-exp-icons {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.t-exp-icons svg {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: 0.2s 0s linear;
+}
+.t-exp-icons svg:hover {
+    scale: 1.2;
+}
+.t-exp-icons svg:active {
+    scale: 0.9;
+}
