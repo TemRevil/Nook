@@ -1,0 +1,75 @@
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 90vh;
+    background-color: #0066ff47;
+    backdrop-filter: blur(40px);
+    margin-top: 50px;
+    border-radius: 15px;
+}
+/* ------------------------------------------------------------------------------ */
+/* Main Content */
+.c-contact-content {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100%;
+}
+.c-title {
+    font-size: 72px;
+    font-weight: 900;
+    color: white;
+}
+/* ------------------------------------------------------------------------------ */
+/* Contact Form */
+#c-form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#c-name, #c-email {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: white;
+    color: #2d343d;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+}
+#c-text {
+    width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+#c-send {
+    width: 100%;
+    padding: 5px;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    transition: 0.2s 0s linear;
+}
+#c-send:hover {
+    background-color: #0a58ca;
+}
+
+.c-text-info {
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+}

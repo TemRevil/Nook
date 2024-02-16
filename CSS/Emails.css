@@ -51,6 +51,11 @@ ul {
     display: none !important;
 }
 
+/* Loading Special Programe */
+.n-loading {
+    position: absolute;
+    z-index: 10;
+}
 /* ------------------------------------------------------------------------------ */
 /* aside list */
 .e-aside {
