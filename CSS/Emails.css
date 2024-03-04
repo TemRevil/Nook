@@ -180,6 +180,7 @@ ul {
     background-color: #cfd4da;
 }
 .e-nook-mail p {
+    max-width: 90%;
     padding: 5px;
     background-color: transparent;
     color: #2B2D42;
@@ -192,6 +193,7 @@ ul {
     background-color: white;
 }
 .remove-mail {
+    max-width: 10%;
     padding: 5px;
     background-color: transparent;
     color: #2B2D42;
